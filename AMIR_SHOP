@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کانفیگ پرو - فروش کانفیگ DNS و WireGuard | امیر اقبالی</title>
+    <meta name="description" content="فروش کانفیگ‌های حرفه‌ای DNS و WireGuard - ۸۰۰,۰۰۰ تومان هدیه ثبت‌نام - پشتیبانی ۲۴/۷">
+    <meta name="keywords" content="کانفیگ, DNS, WireGuard, VPN, شبکه, امیر اقبالی, هدیه ۸۰۰ هزار تومانی">
+    <meta name="author" content="امیر اقبالی">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #1a56db;
+            --accent: #10b981;
+            --dark: #111827;
+            --light: #f9fafb;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: rgba(17, 24, 39, 0.95);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo h1 {
+            color: var(--accent);
+            font-size: 1.8rem;
+        }
+        
+        .logo p {
+            color: #9ca3af;
+            font-size: 0.9rem;
+        }
+        
+        /* Hero */
+        .hero {
+            padding: 150px 0 80px;
+            text-align: center;
+            background: linear-gradient(135deg, #1e3a8a 0%, #111827 100%);
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+        
+        /* Products */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 50px 0;
+        }
+        
+        .product-card {
+            background: rgba(30, 41, 59, 0.8);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        /* Footer */
+        footer {
+            background: #0f172a;
+            padding: 50px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>کانفیگ پرو</h1>
+                    <p>سازنده: امیر اقبالی | ۰۹۹۳۴۰۸۶۳۴۰</p>
+                </div>
+                <nav>
+                    <a href="#home" class="btn">خانه</a>
+                    <a href="#products" class="btn">محصولات</a>
+                    <a href="#cart" class="btn">سبد خرید</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>کانفیگ حرفه‌ای DNS و WireGuard</h2>
+            <p>با ثبت‌نام اولیه ۸۰۰,۰۰۰ تومان هدیه دریافت کنید!</p>
+            <a href="#register" class="btn">ثبت‌نام رایگان</a>
+            <a href="#products" class="btn" style="background:var(--primary);">محصولات</a>
+        </div>
+    </section>
+    
+    <section class="container" id="products">
+        <h2 style="text-align:center;margin:50px 0;font-size:2rem;">محصولات</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <h3>کانفیگ DNS</h3>
+                <p>قیمت: ۱۲۰,۰۰۰ تومان</p>
+                <button class="btn">خرید</button>
+            </div>
+            <div class="product-card">
+                <h3>کانفیگ WireGuard</h3>
+                <p>قیمت: ۸۰,۰۰۰ تومان</p>
+                <button class="btn">خرید</button>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <h3>کانفیگ پرو</h3>
+            <p>تماس: ۰۹۹۳۴۰۸۶۳۴۰</p>
+            <p>سازنده: امیر اقبالی</p>
+            <p>© ۱۴۰۳ - تمامی حقوق محفوظ است</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple Cart System
+        let cart = [];
+        
+        function addToCart(product, price) {
+            cart.push({product, price});
+            alert(product + " به سبد خرید اضافه شد!");
+        }
+        
+        // Add event listeners to buttons
+        document.querySelectorAll('.btn').forEach(btn => {
+            if(btn.textContent.includes('خرید')) {
+                btn.onclick = function() {
+                    const product = this.parentElement.querySelector('h3').textContent;
+                    const price = this.parentElement.querySelector('p').textContent;
+                    addToCart(product, price);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
